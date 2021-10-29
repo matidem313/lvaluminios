@@ -1,0 +1,159 @@
+.color{
+	color: $blue;
+}
+.marca{
+		color:$blue !important;
+		font-weight: bold;
+}
+.myText1{
+	font-size: 1.8rem;
+}
+.myText2{
+	font-size: 1.6rem;
+}
+.myText3{
+	font-size: 1.3rem;
+}
+.myText4{
+	font-size: 1.1rem;
+}
+.myText5{
+	font-size: 1rem;
+}
+.myText6{
+	font-size: 0.9rem;
+}
+.mobile{
+	@media only screen and (max-width: 426px){
+	font-size: 0.7rem;
+	}
+}
+
+%contiene{
+	padding:$pad;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/*WHATSAPP*/
+.whatsapp{
+	position: fixed;
+	z-index: 200;
+	@media only screen and (max-width: 426px){
+		right: 1.5rem;
+		bottom: 4rem;
+		img{
+			max-width: 2.5rem;
+			max-height: 2.5rem;
+		}
+	}
+	@media only screen and (min-width: 426px) and (max-width:1024px){
+		right: 5rem;
+		bottom: 4rem;
+		img{
+			max-width: 3rem;
+			max-height: 3rem;
+		}
+	}
+	@media only screen and (min-width: 1024px){
+		right: 5rem;
+		bottom: 4rem;
+		img{
+			max-width: 4rem;
+			max-height: 4rem;
+		}
+	}
+}
+
+/*CAROUSEL*/
+#carouselContainer{
+	@media only screen and (max-width: 426px){
+	top:2.5rem;
+	}
+}
+.carousel-caption{
+	background-color: #FFFFFF90;
+	margin: auto;
+	@media only screen and (min-width: 426px) and (max-width:1024px){
+		width: 30rem;
+	}
+	@media only screen and (min-width: 1024px){
+		width: 45rem;
+		height: 10rem;
+		top:25rem;
+		bottom: 18rem;
+	}
+}
+
+/*NOSOTROS*/
+.fotoNosotros{
+	background-image: url('../media/logo2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.nosotros{
+	@extend %contiene;
+	text-align: left;
+}
+
+/*PRODUCTOS*/
+.contenedorProd{ 
+	img{
+		@media only screen and (max-width: 426px){
+		width: 80%;
+		height: 12rem;
+		border-radius: 6rem;
+		}	
+		@media only screen and (min-width: 426px) and (max-width:1024px){
+		width: 90%;
+		height: 12rem;
+		border-radius: 12rem;
+		}	
+		@media only screen and (min-width: 1024px){
+		width: 90%;
+		height: 18rem;
+		border-radius: 12rem;
+		}
+	}
+	img:hover{
+	transform: scale(1.1,1.1);
+	}
+	h3{
+	position: relative;
+	top:40%;
+	background-color: #FFFFFF90;
+	}
+}
+
+/*SERVICIOS*/
+.servicios{
+	@extend %contiene;
+	img{
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	h3{
+		padding-bottom: 0.8rem;
+	}
+}
+
+/*RECOMENDACION*/
+.recom{
+	@extend %contiene;
+}
+
+/*CONTACTO*/
+.contacto{
+	@extend %contiene;
+	a{
+		display: block;
+		padding-bottom:0.8rem;
+	}
+	iframe{
+		padding:1rem;
+		width: 100%;
+		height: 100%;
+	}
+}
